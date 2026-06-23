@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Explore The World</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="bi bi-airplane-fill"></i>
+                TravelGo
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+       
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Explore The World With TravelGo</h1>
+                <p>
+                    Discover amazing destinations, plan unforgettable journeys,
+                    and travel smarter than ever.
+                </p>
+
+                <button>Start Your Journey</button>
+            </div>
+        </section>
+
+        
+        <section class="features" id="features">
+
+            <h2>Why Choose TravelGo?</h2>
+
+            <div class="feature-container">
+
+                <div class="feature-box">
+                    <i class="bi bi-globe"></i>
+                    <h3>Global Destinations</h3>
+                    <p>Access thousands of travel locations around the world.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="bi bi-calendar-check"></i>
+                    <h3>Easy Booking</h3>
+                    <p>Book flights, hotels and tours in minutes.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Safe Travel</h3>
+                    <p>Enjoy secure and trusted travel experiences.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+     
+        <section class="destinations" id="destinations">
+
+            <h2>Popular Destinations</h2>
+
+            <div class="destination-container">
+
+                <div class="card">
+                    <img src="images/destination1.png" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>
+                        Experience the romance, culture and iconic landmarks
+                        of France.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/destination2.png" alt="Dubai">
+                    <h3>Dubai</h3>
+                    <p>
+                        Discover luxury, adventure and futuristic architecture.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/destination3.png" alt="Bali" height="206" width="309">
+                    <h3>Bali</h3>
+                    <p>
+                        Relax on beautiful beaches and explore tropical beauty.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+      
+        <section class="contact" id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Enter Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Enter Email"
+                    required>
+
+                <textarea
+                    rows="5"
+                    placeholder="Enter Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TravelGo. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
